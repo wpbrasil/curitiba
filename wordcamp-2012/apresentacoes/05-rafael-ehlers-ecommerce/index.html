@@ -1,0 +1,491 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>E-commerce no WordPress - WordCamp Curitiba 2012</title>
+
+		<meta name="description" content="E-commerce no WordPress, aprenda como fazer!">
+		<meta name="author" content="Rafael Ehlers">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+		<link rel="stylesheet" href="lib/zenburn.css">
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>E-commerce no</h3>
+					<h1>WordPress</h1>
+					<h3 class="inverted">Aprenda como fazer!</h3>
+					<p>
+						<i><small>- <a href="http://riseinternet.com.br" target="_blank">Rafael Ehlers</a> / <a href="http://twitter.com/rafaehlers" target="_blank">@rafaehlers</a></small></i>
+					</p>
+					<script>
+						// Delicously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+				</section>
+				
+				<section>
+					<h2>Whoami</h2>
+					<ol>
+						<li>DOS @ 9</li>
+						<li>HTML4 @ 14</li>
+						<li>2&ordm; grau + técnico</li>
+						<li>Governo</li>
+						<li>Empresa -> VB6</li>
+						<li>inTDV</li>
+						<li>Agência Web</li>
+						<li>rise</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>E-Commerce</h2>
+					<h3>O Monstro</h3>
+				</section>
+				
+				<section>
+					<h1>osCommerce</h1>
+				</section>
+				
+				<section>
+					<img src="img/oscommerce.jpg">
+				</section>
+				
+				<section>
+					<img src="img/oscommerce-home.jpg">
+				</section>
+				
+				<section>
+					<img src="img/oscommerce-admin.jpg">
+				</section>
+
+				<section>
+					<img src="img/oscommerce-admin-categorias.jpg">
+				</section>
+
+				<section>
+					<img src="img/oscommerce-admin-produtos-01.jpg">
+				</section>
+
+				<section>
+					<img src="img/oscommerce-admin-produtos-02.jpg">
+				</section>
+
+				<section>
+					<img src="img/oscommerce-admin-produtos-03.jpg">
+				</section>
+				
+				<section>
+					<h1>Magento</h1>
+				</section>
+			
+				<section>
+					<img src="img/magento-home.jpg">
+				</section>
+				
+				<section>
+					<img src="img/magento-demo.jpg">
+				</section>
+
+				<section>
+					<h1>PrestaShop</h1>
+				</section>
+			
+				<section>
+					<img src="img/prestashop.jpg">
+				</section>
+
+				<section>
+					<img src="img/prestashop-admin.jpg">
+				</section>
+
+				<section>
+					<img src="img/prestashop-admin-categorias.jpg">
+				</section>
+				
+				<section>
+					<img src="img/prestashop-admin-produtos-00.jpg">
+				</section>
+
+				<section>
+					<img src="img/prestashop-admin-produtos-01.jpg">
+				</section>
+
+				<section>
+					<img src="img/prestashop-admin-produtos-02.jpg">
+				</section>
+				
+				<section>
+					<h2>E no WordPress?</h2>
+				</section>
+				
+				<section>
+					<h2>Já temos</h2>
+					<ul>
+						<li>Custom Post Types (Produtos, Pedidos)</li>
+						<li>Post Meta (Produto, Pedido)</li>
+						</li>
+						<li>Categorias Hierárquicas</li>
+						<li>Menus</li>
+						<li>Tags</li>
+						<li>Páginas</li>
+						<li>Busca</li>
+						<li>Comentários (Blog, Produtos)</li>
+						<li>Usuários (Clientes)</li>
+						<li>User Meta (Dados cliente)</li>
+						<li>wp_mail para enviar e-mails</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Falta</h2>
+					<ul>
+						<li>Carrinho de compras
+							<ul>
+								<li>Session</li>
+								<li>Adicionar produto</li>
+								<li>Subtrair produto</li>
+								<li>Remover produto</li>
+								<li>Esvaziar carrinho</li>								
+							</ul>
+						</li>
+						<li>Integrar solução de pagamento
+							<ul>
+								<li>PagSeguro</li>
+								<li>PayPal</li>
+							</ul>
+						</li>
+						<li>Fazer tudo funcionar</li>
+					</ul>	
+				</section>			
+				
+				<section>
+					<h2>Portanto precisamos de</h2>
+					<ol>
+						<li>Tema
+							<ul>
+								<li>Plugins para features adicionais</li>	
+							</ul>
+						</li>
+						<li>Plugin para gerenciar Produtos</li>
+						<li>Plugin para gerenciar Pedidos
+							<ul>
+								<li>Soluções de Pagamento</li>
+							</ul>
+						</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h1>O Tema</h1>					
+				</section>
+
+				<section>
+					<h2>Arquivos básicos</h2>
+					<ul style="font-size:22px; line-height:22px;">
+						<li>header.php</li>
+						<li>front-page.php</li>
+						<li>footer.php</li>
+						<li>page.php</li>
+						<li>single.php</li>
+						<li>home.php</li>
+						<li>category.php</li>
+						<li>functions.php</li>
+						<li>sidebar.php</li>
+						<li>search.php</li>
+						<li>404.php</li>
+						<li>screenshot.png</li>
+						<li>style.css</li>
+						<li>img/</li>
+						<li>js/</li>
+						<li>js/script.js</li>
+						<li>js/plugins.js</li>
+						<li>boilerplate.css</li>
+					</ul>
+				</section>		
+								
+				<section>
+					<h2>Arquivos adicionais</h2>
+					<ul>
+						<li>taxonomy-categoria.php</li>
+						<li>single-produto.php</li>
+						<li>page-carrinho.php</li>
+						<li>page-checkout.php</li>
+						<li>page-login.php</li>
+						<li>page-esqueci-minha-senha.php</li>
+						<li>page-pedidos.php</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Plugins de apoio</h2>
+					<ul>
+						<li><a href="http://www.linhost.org/projects/wordpress-plugins/add-lightbox-title/" target="_blank">Add LightBox & Title</a></li>
+						<li><a href="http://wordpress.org/extend/plugins/anythingslider-for-wordpress/" target="_blank">AnythingSlider for WordPress</a></li>
+						<li><a href="http://contactform7.com/" target="_blank">Contact Form 7</a></li>
+						<li><a href="http://wordpress.org/extend/plugins/contact-form-7-to-database-extension/" target="_blank">Contact Form to DB Extension</a></li>
+						<li><a href="http://dentedreality.com.au/projects/wp-plugin-email-login/" target="_blank">Email Login</a></li>
+						<li><a href="http://www.23systems.net/plugins/lightbox-plus/" target="_blank">Lightbox Plus</a></li>
+						<li><a href="http://wordpress.org/extend/plugins/multiple-post-thumbnails/" target="_blank">Multiple Post Thumbnails</a></li>
+						<li><a href="http://www.qianqin.de/qtranslate/" target="_blank">qTranslate (opcional)</a></li>
+						<li><a href="http://yoast.com/wordpress/seo/" target="_blank">WordPress SEO (Yoast)</a></li>
+						<li><a href="http://www.callum-macdonald.com/code/wp-mail-smtp/" target="_blank">WP-Mail-SMTP</a></li>
+						<li><a href="http://wordpress.org/extend/plugins/wp-pagenavi/" target="_blank">WP-PageNavi</a></li>
+						<li><a href="http://wordpress.org/extend/plugins/wp-better-emails/" target="_blank">WP Better Emails</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Case</h2>
+					<img src="img/artbrasilis.png">
+					<br>
+					<a href="http://artbrasilis.com.br/" target="_blank">Art Brasilis</a>
+				</section>
+				
+				<section>
+					<h3>Plugin de</h3>
+					<h1>Produtos</h1>
+				</section>
+				
+				<section>
+					<h3>Plugin como Classe</h3>
+					
+					<pre><code>
+class Produto {
+	function Produto(){
+		session_start();
+		//funcionalidades do carrinho
+		register_post_type('produto'...
+		register_taxonomy('categoria',array('produto')...
+	}
+	//funções adicionais...
+	function consultaCEP($cep = 0){...
+} 
+
+function ProdutoInit() { 
+	global $produto; 
+	$produto = new Produto(); 
+}
+
+add_action("init", "ProdutoInit",1);
+					</code></pre>
+				</section>
+				
+				<section>
+					<h3>Plugin de</h3>
+					<h1>Pedidos</h1>
+				</section>
+				
+				<section>
+					<h3>Plugin procedural</h3>
+					
+					<pre><code>
+function pe_init(){
+	register_post_type('pedido',...
+	register_taxonomy('status',array('pedido'),...
+	if(!term_exists('registro', 'status')){...
+	if(!term_exists('aguardando', 'status')){...
+	// INICIO CHECKOUT (lógica toda)
+	//lógica PayPal
+	//lógica PagSeguro
+}
+add_action('init', 'pe_init' )
+//funções adicionais
+	
+					</code></pre>
+				</section>
+				
+				<section>
+					<h3>Soluções</h3>
+					<h2>de</h2> 
+					<h1>Pagamento</h1>
+				</section>
+				
+				<section>
+					<h3>Três tipos</h3>
+					<ul style="font-size:20px; line-height:24px;">
+						<li>Direto
+							<ul>
+								<li>Redecard Komerci</li>
+								<li><a href="visa.htm" target="_blank">Visanet (Verified by Visa)</a></li>
+								<li>Boleto Bancário</li>
+							</ul>
+						</li>
+						<li>Gateway
+							<ul>
+								<li>BPag (BoldCron -> UOL)</li>
+								<li>CobreDireto (UOL)</li>
+								<li>Braspag</li>
+								<li>Locaweb</li>
+							</ul>
+						</li>
+						<li>Intermediadores de Pagamento
+							<ul>
+								<li>PagSeguro</li>
+								<li>Moip</li>
+								<li>PayPal</li>
+								<li>Pagamento Digital</li>
+								<li>Mercado Pago</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>PagSeguro</h2>
+					<h3>FORM</h3>
+					<pre><code>
+&lt;form target="pagseguro" method="post"   
+action="https://pagseguro.uol.com.br/v2/checkout/payment.html"&gt;  
+      
+    &lt;!-- Campos obrigatórios --&gt;  
+    &lt;input type="hidden" name="receiverEmail" value="suporte@lojamodelo.com.br"&gt;  
+    &lt;input type="hidden" name="currency" value="BRL"&gt;  
+      
+    &lt;!-- Itens do pagamento (ao menos um item é obrigatório) --&gt;  
+    &lt;input type="hidden" name="itemId1" value="0001"&gt;  
+    &lt;input type="hidden" name="itemDescription1" value="Notebook Prata"&gt;  
+    &lt;input type="hidden" name="itemAmount1" value="24300.00"&gt;  
+    &lt;input type="hidden" name="itemQuantity1" value="1"&gt;  
+    &lt;input type="hidden" name="itemWeight1" value="1000"&gt;					
+					</code></pre>				
+				</section>
+				
+				<section>
+					<img src="img/pagseguro-form.jpg">
+				</section>
+				
+				<section>
+					<h2>PagSeguro</h2>
+					<h3>API</h3>
+					
+					<pre><code>
+			require_once "PagSeguroLibrary/PagSeguroLibrary.php";
+			$paymentRequest = new PagSeguroPaymentRequest();
+			$paymentRequest->setReference($novo_pedido_id);
+			$paymentRequest->setCurrency("BRL");
+			$paymentRequest->setItems($pagseguro_itens);
+			$paymentRequest->setShippingType($CODIGO);
+					</code></pre>
+				</section>
+				
+				<section>
+					<img src="img/pagseguro-api.jpg">
+				</section>
+				
+				<section>
+					<img src="img/pagseguro-notificacao.jpg">
+				</section>
+				
+				<section>
+					<h1>PayPal</h1>
+				</section>
+				
+				<section>
+					<img src="img/paypal-opcoes.jpg">
+				</section>
+				
+				<section>
+						
+					<a href="https://cms.paypal.com/us/cgi-bin/webscr?cmd=_render-content&content_ID=developer/howto_api_reference#wpp_ec_api_reference" target="_blank">API Reference</a>
+				</section>
+				<section>
+					<p>ExpressCheckout</p>
+					<ul>
+						<li><b style="color:#FF0000">Set</b>ExpressCheckout</li>
+						<li><b style="color:#FF0000">Get</b>ExpressCheckout<i style="color:#FF0">Details</i></li>
+						<li><b style="color:#FF0000">Do</b>ExpressCheckout<i style="color:#FF0">Payment</i></li>
+					</ul>
+				</section>
+				
+				
+				<section>
+					<h1>THE END</h1>
+				</section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+		<script src="lib/highlight.js"></script>
+		<script src="lib/classList.js"></script>
+		
+		<script src="js/reveal.js"></script>
+		
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			// Fires when a slide with data-state=customevent is activated
+			Reveal.addEventListener( 'customevent', function() {
+				//alert( '"customevent" has fired' );
+			} );
+
+			// Fires each time a new slide is activated
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: true,
+
+				// Loops the presentation, defaults to false
+				loop: false,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+	</body>
+</html>

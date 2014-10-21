@@ -1,0 +1,31 @@
+Oi,
+
+Esse zip contem o material da palestra que ministrei no WordCamp Curitiba.
+
+=====
+
+No último sábado dei uma palestra no WordCamp Curitiba com o título "URLs e Permissões personalizadas, ou como restringir a edição de posts por netos de holandeses após o meio dia".
+
+Esse zip contem o material da palestra. que só tinha um slide (o arquivo .pdf) mas que tinha muito código de exemplo.
+
+O arquivo change_db_url.php é o script que eu mostrei para procurar e substituir o endereço do site no banco de dados de uma maneira correta.
+
+Os exemplos de código estão na pasta plugins.
+
+Na pasta rewrite_rules está o que mostrei sobre rewrite rules. Existem uns pedaços comentados no código, que são as duas opções que mostrei.
+
+Fiz um post bem completo sobre isso no passado que explica isso tudo bem, está aqui: http://hacklab.com.br/2010/09/08/wordpress-rewrite-rules/
+
+Na pasta wordcamp-like está o plugin que eu fiz de dar like em posts e os exemplos de como usar chacagem de cabalities nele. Todos os arquivos like-*.php são o mesmo plugin em estágios diferentes de desenvolvimento, desde quando só checávamos se o usuários estava logado, passando por quando checávamos se o usuário tinha a permissão para "like_posts", até quando acrescentamos uma regra para ele não poder curtir os próprios posts. Ative só um por vez.
+
+movies.php é o plugin que implementa um post type e brinca com as meta capabilities.
+
+movies_restrito_para_holandeses.php é o mesmo plugin, que restringe a edição desses posts por netos de holandeses após o meio dia (pra justificar o título da palestra)
+
+Finalmente, holandeses.php, é um plugin mal feito só para acrescentar um campo na página de edição de perfil do usuário e marcarmos quem são os netos de holandeses.
+
+Aproveitem e se tiverem qualquer dúvida entrem em contato.
+
+abraços
+
+Leo,,
